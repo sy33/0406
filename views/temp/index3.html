@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+
+<body>
+    <div id="test">
+        jACK
+    </div>
+
+<script>
+    var e1 = document.getElementById('test');
+
+    console.log(e1.nodeName);
+    console.log(e1.nodeType);
+
+    console.log(e1.id);
+
+    console.log(e1.getAttribute('class'))
+
+    console.log(e1.removeAttribute('class'))
+
+    e1.textContent = 'Test'
+    // innerText 비표준
+
+    e1.innerHTml = '<div> this is inner div </div>'
+
+    //var articles = getArticles();
+
+    var articles = [{id:'1', title:'title', content:'content'}];
+
+    for(var i = 0; i<articles.length; i++){
+        var article ='<div><h1>'+articles[i].title+'</h1><p>'+
+            articles[i].content+'</p></div>';
+            hrmlCode+=article; // 보안에 취약하므로 
+    }
+
+    e1.innerHTML = htmlCode;
+    
+    // var article = createElement();
+
+    // var title = createElement();
+
+    // // createElement()
+
+    // createTextNode()
+
+    // appendChild()
+
+    e1.style.fontSize = '3rem';
+
+</script>    
+</body>
+</html>    

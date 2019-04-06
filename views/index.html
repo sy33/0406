@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+</style>
+</head>
+
+<body>
+    <h1>Dom Test</h1>
+ <button id="bt">Click me</button>
+    <ul>
+        <li id="a">item1</li>
+        <li id="b"> item2</li>
+        <li id="c">item3</li>
+        <li id="d">item4</li>
+    </ul>
+ <script>
+      //요소 하나를 찾을때
+     var bt = document.getElementById('bt');
+     console.log(bt);
+     var bt2 = document.querySelector('#bt');
+     console.log(bt2);
+
+
+     //요소 여러개를 찾을때
+     var list = document.getElementByClassName('a')
+
+     for(var i=0; i<list.length; i++){
+         var a = list.item(i);
+         a.style.border = '1px solid #333';
+     }
+     console.log(list); // HTML colection
+
+    //  for(var i=list.length-1; i>=0; i--){
+    //      list[i].className='b';
+    //  }
+
+    // var list2 = document.query.SelctorAll('ul>li');
+    // console.log(list2);
+    // for(var i=0; i<list2.length; i++){
+    //     list2[i].className = 'b';
+    // }
+
+    // var list3 = document.query();
+
+     // document.getElementByClassName('a')
+     //document.querySelectorAll()
+
+     //document.getElementByTagName()
+
+
+     //document.querySelector('ul>li')
+     //getElementById()
+     //querySelelctor()
+
+    //  console.log(bt);
+    //  bt.onclick = function(){
+    //   console.log('click');
+    //  }
+ </script>
+</body>
+</html>
